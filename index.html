@@ -1,56 +1,133 @@
-<html>
-    <head>
-        <title> Portfolio </title>
-        <link rel="stylesheet" href="Estilos/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
-        <header>
-            <div class="content">
-                <div class="menu container">
-                    <a href="index.html" class="logo" > Catalina Cavallo </a>  
-                    <input type= "checkbox" id="menu" />
-                    <label for="menu">
-                        <img class = "icono" src="Imagenes/menu.png">
-                    </label>
-                    <nav class="barra">
-                        <ul>
-                            <li> <a href = index.html> Inicio </a> </li>
-                            <li> <a href = habilidades.html> Habilidades </a> </li>
-                            <li> <a href = Proyectos.html> Proyectos </a> </li> 
-                            <li> <a href = Contacto.html> Contacto </a> </li> 
-                        </ul>
-                    </nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Catalina Cavallo</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="menu container">
+            <a href="#inicio" class="logo">Catalina Cavallo</a>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="section section-inicio">
+            <div class="foto-container">
+                <img src="Imagenes/foto.jpeg" alt="Foto Catalina Cavallo" />
+            </div>
+            <div class="descripcion">
+                <h1>Sobre mí...</h1>
+                <p>
+                    ¡Hola! Mi nombre es Catalina Belén Cavallo y soy estudiante de
+                    <span>Ingeniería en Sistemas de Información.</span> Cuento con una formación técnica y conocimientos sólidos en análisis,
+                    diseño y programación. Apasionada por la resolución de problemas, el
+                    desarrollo de software y la mejora de procesos mediante la tecnología.
+                    Busco aplicar mis habilidades en entornos reales de trabajo, contribuir
+                    en equipos de desarrollo y seguir aprendiendo.
+                </p>
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/catalina-cavallo-3576b62a5/">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/CatalinaCavallo">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cata_cavallo/">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5493492650506?text=Hola%20Catalina%2C%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20hablar%20con%20vos.">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
                 </div>
             </div>
-        </header>
-
-        <main>
-            <section class = inicio>
-                <img src="Imagenes/foto.jpeg">
-                <div class = "descripcion">
-                    <h1> Sobre mí... </h1>
-                    <p> ¡Hola! Mi nombre es Catalina Belén Cavallo y soy estudiante de <span>Ingeniería en Sistemas de Información.</span> Cuento con una formación técnica y conocimientos sólidos en análisis, diseño y programación. Apasionada por la resolución de problemas, el desarrollo de software y la mejora de procesos mediante la tecnología. Busco aplicar mis habilidades en entornos reales de trabajo, contribuir en equipos de desarrollo y seguir aprendiendo.</p>
-                    <div class="redes">
-                        <a href="https://www.linkedin.com/in/catalina-cavallo-3576b62a5/"> 
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/CatalinaCavallo"> 
-                            <i class="bi bi-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/cata_cavallo/"> 
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://wa.me/5493492650506?text=Hola%20Catalina%2C%20vi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20hablar%20con%20vos. "> 
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                    </div>
+        </section>
+        
+        <section id="habilidades" class="section section-habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidades-grid">
+                <div class="habilidad-card">
+                    <h3>Análisis y diseño de sistemas</h3>
+                    <p>Capacidad de encontrar soluciones técnicas y funcionales, y documentar arquitecturas.</p>
                 </div>
-            </section>
-        </main>
-    </body>
+                <div class="habilidad-card">
+                    <h3>Diseño web con HTML, CSS y JavaScript</h3>
+                    <p>Habilidad para crear sitios web interactivos.</p>
+                </div>
+                <div class="habilidad-card">
+                    <h3>Principios de UX</h3>
+                    <p>Comprendo fundamentos de experiencia de usuario y su impacto en el diseño de interfaces.</p>
+                </div>
+                <div class="habilidad-card">
+                    <h3>Programación en C</h3>
+                    <p>Conocimiento en estructuras de control, punteros, manejo de memoria y compilación.</p>
+                </div>
+                <div class="habilidad-card">
+                    <h3>Prototipado y diseño en Figma</h3>
+                    <p>Diseño interfaces y prototipos interactivos a partir de requerimientos funcionales.</p>
+                </div>
+                <div class="habilidad-card">
+                    <h3>Programación orientada a objetos</h3>
+                    <p>Conocimiento del paradigma OOP aplicado en Kotlin.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section section-proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos-grid">
+                <article class="proyecto-card">
+                    <div class="proyecto-info">
+                        <img src="Imagenes/portfolio.png" alt="Portfolio Personal" />
+                        <div>
+                            <h3>Portfolio Personal</h3>
+                            <p>
+                                Este proyecto muestra una recopilación de mis habilidades, experiencia
+                                y logros. He utilizado HTML y CSS para desarrollarlo, con el fin de
+                                crear un espacio donde presento mis conocimientos técnicos y proyectos anteriores.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="proyecto-card">
+                    <div class="proyecto-info">
+                        <img src="Imagenes/spotify.png" alt="Aplicación de Música con Spotify API" />
+                        <div>
+                            <h3>Aplicación de Música con Spotify API</h3>
+                            <p>
+                                En este proyecto, integro la API de Spotify para crear una aplicación que
+                                permite a los usuarios buscar a diferentes artistas y encontrar información relacionada a ellos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="proyecto-card">
+                    <div class="proyecto-info">
+                        <img src="Imagenes/pasantias.png" alt="Sistema de Gestión de Pasantías" />
+                        <div>
+                            <h3>Sistema de Gestión de Pasantías (en proceso)</h3>
+                            <p>
+                                Este sistema facilita la administración de pasantías en una institución educativa.
+                                Los administradores pueden gestionar pasantes, supervisores y asignaciones de tareas.
+                                Actualmente en desarrollo.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+    </main>
+</body>
 </html>
